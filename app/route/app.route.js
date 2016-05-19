@@ -8,23 +8,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "{ publicFunction }";
-        this.hero = {
-            id: 1,
-            name: "Wind Worth"
-        };
+var router_deprecated_1 = require('@angular/router-deprecated');
+var app_component_1 = require("../app.component");
+var Routes = (function () {
+    function Routes() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: '/templates/home.html'
-        }), 
+    Routes = __decorate([
+        router_deprecated_1.RouteConfig([
+            {
+                path: '/',
+                name: 'Home',
+                component: app_component_1.AppComponent
+            },
+            {
+                path: '/playlists',
+                name: 'Playlists',
+                component: app_component_1.AppComponent
+            }
+        ]), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], Routes);
+    return Routes;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.Routes = Routes;
+//# sourceMappingURL=app.route.js.map

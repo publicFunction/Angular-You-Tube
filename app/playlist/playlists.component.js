@@ -9,22 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "{ publicFunction }";
-        this.hero = {
-            id: 1,
-            name: "Wind Worth"
-        };
+var Playlists = (function () {
+    function Playlists() {
     }
-    AppComponent = __decorate([
+    Playlists = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: '/templates/home.html'
+            templateUrl: '/templates/playlists.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], Playlists);
+    return Playlists;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.Playlists = Playlists;
+//# sourceMappingURL=playlists.component.js.map

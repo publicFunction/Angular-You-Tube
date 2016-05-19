@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
+import { Playlists } from './playlist/playlists.component';
 
 @Component({
 	selector : 'my-app',
-	template : '<h1>publicFunction</h1>'
+	templateUrl : '/templates/home.html'
 })
 
-export class AppComponent { }
+export class AppComponent {
+
+	title = "{ publicFunction }";
+	hero : Playlists = {
+		id: 1,
+		name : "Wind Worth"
+	};
+
+}
 
 
