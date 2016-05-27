@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PLAYLISTS } from '/app/services/mocks/mock-playlists';
+import { PLAYLISTS } from './mocks/mock-playlists';
 
 
 @Injectable()

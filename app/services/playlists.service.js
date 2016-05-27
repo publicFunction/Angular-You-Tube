@@ -9,29 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Playlists = (function () {
-    function Playlists() {
+var mock_playlists_1 = require('./mocks/mock-playlists');
+var PlaylistsService = (function () {
+    function PlaylistsService() {
     }
-    Playlists = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: '/templates/playlists.html'
-        }), 
+    PlaylistsService.prototype.getPlaylists = function () {
+        return mock_playlists_1.PLAYLISTS;
+    };
+    PlaylistsService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], Playlists);
-    return Playlists;
+    ], PlaylistsService);
+    return PlaylistsService;
 }());
-exports.Playlists = Playlists;
-var PLAYLISTS = [
-    { "id": 11, "name": "Mr. Nice" },
-    { "id": 12, "name": "Narco" },
-    { "id": 13, "name": "Bombasto" },
-    { "id": 14, "name": "Celeritas" },
-    { "id": 15, "name": "Magneta" },
-    { "id": 16, "name": "RubberMan" },
-    { "id": 17, "name": "Dynama" },
-    { "id": 18, "name": "Dr IQ" },
-    { "id": 19, "name": "Magma" },
-    { "id": 20, "name": "Tornado" }
-];
-//# sourceMappingURL=playlists.component.js.map
+exports.PlaylistsService = PlaylistsService;
+//# sourceMappingURL=playlists.service.js.map

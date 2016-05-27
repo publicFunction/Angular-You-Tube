@@ -1,4 +1,4 @@
-import { Playlists } from '/app/playlist/playlists.component';
+import { Playlists } from '../../playlist/playlists.component';
 
 export var PLAYLISTS: Playlists[] = [
     {id: 11, name: 'Mr. Nice'},
