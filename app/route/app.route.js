@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var router_deprecated_1 = require('@angular/router-deprecated');
 var app_component_1 = require("../app.component");
+var playlists_component_1 = require("../playlist/playlists.component");
 var Routes = (function () {
     function Routes() {
     }
@@ -23,7 +24,7 @@ var Routes = (function () {
             {
                 path: '/playlists',
                 name: 'Playlists',
-                component: app_component_1.AppComponent
+                component: playlists_component_1.Playlists
             }
         ]), 
         __metadata('design:paramtypes', [])

@@ -6,11 +6,10 @@ import { Component } from '@angular/core';
 })
 
 export class Playlists {
-	id : number;
-    name : string;
+    title = "{ publicFunction Playlists }";
 }
 
-var PLAYLISTS : Playlists[] = [
+/*var PLAYLISTS : Playlists[] = [
     { "id": 11, "name": "Mr. Nice" },
     { "id": 12, "name": "Narco" },
     { "id": 13, "name": "Bombasto" },
@@ -21,5 +20,5 @@ var PLAYLISTS : Playlists[] = [
     { "id": 18, "name": "Dr IQ" },
     { "id": 19, "name": "Magma" },
     { "id": 20, "name": "Tornado" }
-];
+];*/
 

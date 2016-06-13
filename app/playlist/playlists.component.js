@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var Playlists = (function () {
     function Playlists() {
+        this.title = "{ publicFunction Playlists }";
     }
     Playlists = __decorate([
         core_1.Component({
@@ -22,7 +23,7 @@ var Playlists = (function () {
     return Playlists;
 }());
 exports.Playlists = Playlists;
-var PLAYLISTS = [
+/*var PLAYLISTS : Playlists[] = [
     { "id": 11, "name": "Mr. Nice" },
     { "id": 12, "name": "Narco" },
     { "id": 13, "name": "Bombasto" },
@@ -33,5 +34,5 @@ var PLAYLISTS = [
     { "id": 18, "name": "Dr IQ" },
     { "id": 19, "name": "Magma" },
     { "id": 20, "name": "Tornado" }
-];
+];*/
 //# sourceMappingURL=playlists.component.js.map

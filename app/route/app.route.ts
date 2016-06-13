@@ -1,5 +1,6 @@
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 import {AppComponent} from "../app.component";
+import {Playlists} from "../playlist/playlists.component";
 
 @RouteConfig([
     {
@@ -10,7 +11,7 @@ import {AppComponent} from "../app.component";
     {
         path: '/playlists',
         name: 'Playlists',
-        component: AppComponent
+        component: Playlists
     }
 ])
 
